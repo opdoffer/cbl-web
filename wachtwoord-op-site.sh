@@ -18,5 +18,6 @@ sudo su -c 'cat <<EOF >  /etc/apache2/sites-enabled/000-default.conf
     </Directory>
 </VirtualHost>
 EOF'
+sudo service apache2 restart
 
 echo -e "Klaar!"
