@@ -19,5 +19,7 @@ sudo su -c 'cat <<EOF >  /etc/apache2/sites-enabled/000-default.conf
 </VirtualHost>
 EOF'
 sudo service apache2 restart
-
-echo -e "Klaar!"
+echo " "
+echo -e "Type het volgende commando in:"
+echo -e "sudo htpasswd -c /etc/apache2/.htpasswd <naam>"
+echo -e "Klaar! Je webserver is nu met een wachtwoord beveiligd"
