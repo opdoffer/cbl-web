@@ -1,7 +1,4 @@
 #!/bin/bash
-end=$((SECONDS+3))
-chars="/-\|"
-
 echo " "
 echo -e "Dit commando luistert op het netwerk naar pakketjes met en wachtwoord"
 echo " "
@@ -15,6 +12,6 @@ echo -e "Druk op CTRL-C om dit script te stoppen"
 echo " "
 echo -e "Aan het luisteren....."
 echo " "
-tcpdump -i eth0 -v port http | grep "Authorization: Basic"
+sudo tcpdump -A -i any -v port http | grep "Authorization: Basic"
 echo " "
 echo " "
