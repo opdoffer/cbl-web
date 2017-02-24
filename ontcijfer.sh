@@ -16,6 +16,6 @@ while [ $SECONDS -lt $end ]; do
 done
 echo " "
 echo -e "Hoppa, ik weet het! Je gebruikersnaam en wachtwoord zijn:"
-echo $geheim | base64 --decode
+echo $geheim== | base64 --decode
 echo " "
 echo " "
